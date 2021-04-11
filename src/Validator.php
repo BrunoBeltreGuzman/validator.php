@@ -2,9 +2,7 @@
 
 class Validator
 {
-       public function __construct()
-       {
-       }
+
 
        /*
               Empty
@@ -26,11 +24,21 @@ class Validator
        */
        public static function isNull($value)
        {
+              if ($value == null) {
+                     return true;
+              } else if ($value != null) {
+                     return false;
+              }
               return false;
        }
 
        public static function isNotNull($value)
        {
+              if ($value != null) {
+                     return true;
+              } else if ($value == null) {
+                     return false;
+              }
               return false;
        }
 

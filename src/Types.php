@@ -1,5 +1,5 @@
-<?php 
+<?php
 
-interface Types {
-       
+interface Types
+{
 }
