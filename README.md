@@ -1,6 +1,6 @@
 # validator.php
 
--[GetStated](#GetStated)
+[GetStated](#GetStated)
 
 **Functional validation library**
 
