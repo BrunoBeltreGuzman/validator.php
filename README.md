@@ -1,5 +1,7 @@
 # validator.php
 
+-[GetStated](#GetStated)
+
 **Functional validation library**
 
 - Empty
@@ -11,3 +13,5 @@
 - Booleans
 - Array
 - Object
+
+# GetStated
