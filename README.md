@@ -4,23 +4,34 @@
 
 **Functional validation library**
 
-- Empty
-- Null
-- Equals
-- String
+**Data Primitive: **
 - Chart
 - Numbers
+    1. Integer
+    2. Float
+    3. Boolean
+    4. Decimal
 - Booleans
+
+**Data Type: **
+- Null
+- String
 - Array
 - Object
 - Date
+- Binary
+
+**Data Values: ** 
+- Empty
+- Equals
 - Email
 - Float
 - File
 - Image
 - Image b64
-- Binary
 - Image Base64
 - Some
+
+
 
 # GetStated
