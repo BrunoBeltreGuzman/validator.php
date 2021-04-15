@@ -4,7 +4,7 @@
 
 **Functional validation library**
 
-**Data Primitive: **
+**Data Primitive:**
 - Chart
 - Numbers
     1. Integer
@@ -13,7 +13,7 @@
     4. Decimal
 - Booleans
 
-**Data Type: **
+**Data Type:**
 - Null
 - String
 - Array
@@ -21,7 +21,7 @@
 - Date
 - Binary
 
-**Data Values: ** 
+**Data Values:** 
 - Empty
 - Equals
 - Email
