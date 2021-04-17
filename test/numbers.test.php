@@ -3,12 +3,13 @@
 require_once "../src/validator.php";
 require_once "test.php";
 
-$value = null;
+$value = 5;
 $expected = true;
-$result = isNull($value);
+$result = isInteger($value);
 test($result, $expected);
 
-$value = null;
-$expected = false;
-$result = isNotNull($value);
+
+$value = "aassda";
+$expected = true;
+$result = isNotInteger($value);
 test($result, $expected);
