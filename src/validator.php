@@ -201,25 +201,33 @@ function isNotObject($object)
 }
 
 //Date
-function isDate($date)
+function isDate($month, $day, $year)
 {
-       return false;
+       return checkdate($month, $day, $year);
 }
 
-function isNotDate($date)
+function isNotDate($month, $day, $year)
 {
-       return false;
+       if (checkdate($month, $day, $year)) {
+              return false;
+       } else {
+              return true;
+       }
 }
 
 //Binary
 function isBinary($binary)
 {
-       return false;
+       return preg_match('~^[01]+$~', $binary);
 }
 
 function isNotBinary($binary)
 {
-       return false;
+       if (preg_match('~^[01]+$~', $binary)) {
+              return false;
+       } else {
+              return true;
+       }
 }
 
 /*===================================================
@@ -279,45 +287,61 @@ function isNotEmail($email)
 //IP
 function isIP($ip)
 {
-       return false;
+       return filter_var($ip, FILTER_VALIDATE_IP);
 }
 
 function isNotIP($ip)
 {
-       return false;
+       if (filter_var($ip, FILTER_VALIDATE_IP)) {
+              return false;
+       } else {
+              return true;
+       }
 }
 
 //IPv4
 function isIPv4($ip)
 {
-       return false;
+       return filter_var($ip, FILTER_FLAG_IPV4);
 }
 
 function isNotIPv4($ip)
 {
-       return false;
+       if (filter_var($ip, FILTER_FLAG_IPV4)) {
+              return false;
+       } else {
+              return true;
+       }
 }
 
 //IPv6
 function isIPv6($ip)
 {
-       return false;
+       return filter_var($ip, FILTER_FLAG_IPV6);
 }
 
 function isNotIPv6($ip)
 {
-       return false;
+       if (filter_var($ip, FILTER_FLAG_IPV6)) {
+              return false;
+       } else {
+              return true;
+       }
 }
 
 //URL
 function isURL($url)
 {
-       return false;
+       return filter_var($url, FILTER_VALIDATE_URL);
 }
 
 function isNotURL($url)
 {
-       return false;
+       if (filter_var($url, FILTER_VALIDATE_URL)) {
+              return false;
+       } else {
+              return true;
+       }
 }
 
 
@@ -348,12 +372,37 @@ function isNotFile($file)
 }
 
 //Image Base64
-function isImageBase64($image)
+function isImageBase64($base64)
 {
+       $img = imagecreatefromstring(base64_decode($base64));
+       if (!$img) {
+              return false;
+       }
+       imagepng($img, 'tmp.png');
+       $info = getimagesize('tmp.png');
+       unlink('tmp.png');
+       if (
+              $info[0] > 0 && $info[1] > 0 && $info['mime']
+       ) {
+              return true;
+       }
        return false;
 }
 
-function isNotImageBase64($image)
+
+function isNotImageBase64($base64)
 {
+       $img = imagecreatefromstring(base64_decode($base64));
+       if (!$img) {
+              return true;
+       }
+       imagepng($img, 'tmp.png');
+       $info = getimagesize('tmp.png');
+       unlink('tmp.png');
+       if (
+              $info[0] > 0 && $info[1] > 0 && $info['mime']
+       ) {
+              return false;
+       }
        return false;
 }
