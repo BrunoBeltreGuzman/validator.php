@@ -3,22 +3,19 @@
 require_once "../src/validator.php";
 require_once "test.php";
 
-$value = null;
 $expected = true;
-$result = isNull($value);
+$result = isDate("4", "15", "2021");
 test($result, $expected);
 
-$value = 0;
+
 $expected = true;
-$result = isNull($value);
+$result = isDate("0", "15", "2021");
 test($result, $expected);
 
-$value = true;
 $expected = true;
-$result = isNotNull($value);
+$result = isNotDate("6", "15", "-3");
 test($result, $expected);
 
-$value = null;
 $expected = true;
-$result = isNotNull($value);
+$result = isNotDate("6", "15", "2021");
 test($result, $expected);

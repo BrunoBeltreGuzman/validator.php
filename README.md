@@ -1,6 +1,14 @@
+Image
+
 # validator.php
 
 **Functional validation library**
+
+Version
+
+Total Downloads
+
+Docs
 
 [About](#About)
 

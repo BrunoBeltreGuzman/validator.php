@@ -3,22 +3,25 @@
 require_once "../src/validator.php";
 require_once "test.php";
 
-$value = null;
+$value = array('user' => "Jhon");
 $expected = true;
-$result = isNull($value);
+$result = isArray($value);
 test($result, $expected);
 
-$value = 0;
+
+$value = "array";
 $expected = true;
-$result = isNull($value);
+$result = isArray($value);
 test($result, $expected);
 
-$value = true;
+
+$value = "array";
 $expected = true;
-$result = isNotNull($value);
+$result = isNotArray($value);
 test($result, $expected);
 
-$value = null;
+
+$value = array('user' => "Jhon");
 $expected = true;
-$result = isNotNull($value);
+$result = isNotArray($value);
 test($result, $expected);

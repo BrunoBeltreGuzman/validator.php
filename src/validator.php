@@ -2,8 +2,18 @@
 
 <?php
 
-//@author: Bruno Beltre Guzman
-//GitHub: https://github.com/BrunoBeltreGuzman
+/**
+ * 
+ * Validator.php - Functional validation library
+ * PHP Version 5.5.
+ *
+ * @see       https://github.com/BrunoBeltreGuzman/validator.php The Validator.php GitHub project
+ * @author   Bruno Beltre Guzman (Synchro/coolbru) <phpmailer@synchromedia.co.uk>
+ * @copyright 2021
+ * @license   http://www.gnu.org/copyleft/lesser.html 
+ *
+ */
+
 
 /*===================================================
                                           Data Primitive:
@@ -287,7 +297,11 @@ function isNotEmail($email)
 //IP
 function isIP($ip)
 {
-       return filter_var($ip, FILTER_VALIDATE_IP);
+       if (filter_var($ip, FILTER_VALIDATE_IP)) {
+              return true;
+       } else {
+              return false;
+       }
 }
 
 function isNotIP($ip)
@@ -348,17 +362,6 @@ function isNotURL($url)
 /*===================================================
                                           Others:
 ===================================================*/
-
-//Equals
-function isEqual2($value1, $value2)
-{
-       return false;
-}
-
-function isNotEqual2($value1, $value2)
-{
-       return false;
-}
 
 //File
 function isFile($file)

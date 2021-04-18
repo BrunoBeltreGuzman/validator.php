@@ -3,22 +3,23 @@
 require_once "../src/validator.php";
 require_once "test.php";
 
-$value = null;
+$value = 3.14;
 $expected = true;
-$result = isNull($value);
+$result = isDouble($value);
 test($result, $expected);
 
-$value = 0;
+$value = 3;
 $expected = true;
-$result = isNull($value);
+$result = isDouble($value);
 test($result, $expected);
 
-$value = true;
+$value = 14;
 $expected = true;
-$result = isNotNull($value);
+$result = isNotDouble($value);
 test($result, $expected);
 
-$value = null;
+
+$value = 14.3;
 $expected = true;
-$result = isNotNull($value);
+$result = isNotDouble($value);
 test($result, $expected);
