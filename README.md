@@ -1,4 +1,4 @@
-![image]("util/img/logo.png")
+![image](https://github.com/BrunoBeltreGuzman/validator.php/blob/main/util/img/logo2.png)
 
 # validator.php
 
@@ -34,7 +34,7 @@ test($result, $expected);
 Result:
 
 <br />
-<span style="font-size:50px;">&#128526;</span>
+<span style="font-size:100px;">&#128526;</span>
 <h2>Result: 1</h2>
 <h3>Expected: 1</h3>
 <p>Test Passed!!</p>
