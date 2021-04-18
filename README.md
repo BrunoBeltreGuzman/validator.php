@@ -1,85 +1,54 @@
-Image
+![image]("util/img/logo.png")
 
 # validator.php
 
 **Functional validation library**
 
-Version
-
-Total Downloads
-
-Docs
-
 [About](#About)
 
 [GetStated](#GetStated)
 
-[Validator](#Validator)
+[Example](#Example)
 
-**Data Primitive:**
-
-- Numbers
-- Booleans
-
-**Data Type:**
-
-- Null
-- String
-- Chart
-- Array
-- Object
-- Date
-- Binary
-
-**Data Values:**
-
-- Empty
-- Equals
-- Email
-- Float
-- File
-- Image
-- Image b64
-- Image Base64
-- IP
-- IPv4
-- IPv6
-- Some
-
-# GetStated
+[License](#License)
 
 # About
 
-# Validator
+**Functional validation library**
 
-**Data Primitive:**
+# GetStated
 
-- Chart
-- Numbers
-     1. Integer
-     2. Float
-     3. Boolean
-     4. Decimal
-     5. byte
-- Booleans
+url
 
-**Data Type:**
+# Example
 
-- Null
-- String
-- Array
-- Object
-- Date
-- Binary
+Example `isObject()`
 
-**Data Values:**
+```php
+$value = new App();
+$expected = true;
+$result = isObject($value);
+test($result, $expected);
+```
 
-- Empty
-- Equals
-- Email
-- Float
-- File
-- Image
-- Image b64
-- Image Base64
-- Some
+Result:
+
+<br />
+<span style="font-size:50px;">&#128526;</span>
+<h2>Result: 1</h2>
+<h3>Expected: 1</h3>
+<p>Test Passed!!</p>
+<br />
+
+# License
+
+PUBLIC LICENSE
+Version 2.1, February 1999
+`Copyright (C) 2021`, Validator.php - Functional validation library,
+Bruno Beltre,
+Everyone is permitted to copy and distribute verbatim copies
+of this license document, but changing it is not allowed.
+
+This is the first released version of the Validator.php. It also counts
+as the successor of the GNU Library Public License, version 1, hence
+the version number 1.0
