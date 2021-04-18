@@ -33,12 +33,10 @@ test($result, $expected);
 
 Result:
 
-<br />
 <span style="font-size:100px;">&#128526;</span>
-<h2>Result: 1</h2>
+<h3>Result: 1</h3>
 <h3>Expected: 1</h3>
 <p>Test Passed!!</p>
-<br />
 
 # License
 
