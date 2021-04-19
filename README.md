@@ -1,26 +1,33 @@
-![image](https://github.com/BrunoBeltreGuzman/validator.php/blob/main/util/img/logo2.png)
+![image]("util/img/logo.png")
 
 # validator.php
 
 **Functional validation library**
 
-[About](#About)
+# Table of Contents
 
-[GetStated](#GetStated)
+- [Validator.php](#validator.php)
 
-[Example](#Example)
+     - [Table of Contents](#table-of-contents)
+     - [Download file](#Downloadfile)
+     - [Usage](#usage)
+     - [Test](#Test)
+     - [License](#License)
 
-[License](#License)
+# Download file
 
-# About
+**Get Stated**
 
-**Functional validation library**
+https://www.validator.com/
 
-# GetStated
+# Usage
 
-url
+| Comando        | Descripción                                           |
+| -------------- | ----------------------------------------------------- |
+| **isObject()** | Validate if a a value has an instance with an object. |
+| **isObject()** | Validate if a a value has an instance with an object. |
 
-# Example
+# Test
 
 Example `isObject()`
 
@@ -33,10 +40,12 @@ test($result, $expected);
 
 Result:
 
-<span style="font-size:100px;">&#128526;</span>
-<h3>Result: 1</h3>
+<br />
+<span style="font-size:50px;">&#128526;</span>
+<h2>Result: 1</h2>
 <h3>Expected: 1</h3>
 <p>Test Passed!!</p>
+<br />
 
 # License
 
