@@ -1,8 +1,10 @@
-![image]("util/img/logo.png")
-
 # validator.php
 
 **Functional validation library**
+
+# Download file
+
+https://www.validator.com/
 
 # Table of Contents
 
@@ -13,12 +15,6 @@
      - [Usage](#usage)
      - [Test](#Test)
      - [License](#License)
-
-# Download file
-
-**Get Stated**
-
-https://www.validator.com/
 
 # Usage
 
