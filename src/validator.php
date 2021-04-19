@@ -9,8 +9,7 @@
  *
  * @see       https://github.com/BrunoBeltreGuzman/validator.php The Validator.php GitHub project
  * @author   Bruno Beltre Guzman (Synchro/coolbru) <phpmailer@synchromedia.co.uk>
- * @copyright 2021
- * @license   http://www.gnu.org/copyleft/lesser.html 
+ * @copyright 2021 
  *
  */
 
