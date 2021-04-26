@@ -76,12 +76,14 @@ test($result, $expected);
 
 Result:
 
-<br />
-<span style="font-size:50px;">&#128526;</span>
-<h2>Result: 1</h2>
-<h3>Expected: 1</h3>
-<p>Test Passed!!</p>
-<br />
+&#128526;
+
+Result: 1
+
+Expected: 1
+
+Test Passed!!
+
 
 # License
 
