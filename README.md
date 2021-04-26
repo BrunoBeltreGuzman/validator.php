@@ -10,9 +10,9 @@ https://www.validator.com/
 
 - [Validator.php](#validator.php)
 
-     - [Table of Contents](#table-of-contents)
-     - [Download file](#Downloadfile)
-     - [Usage](#usage)
+     - [Table of Contents](#Table-of-Contents)
+     - [Download file](#Download-File)
+     - [Usage](#Usage)
      - [Test](#Test)
      - [License](#License)
 
