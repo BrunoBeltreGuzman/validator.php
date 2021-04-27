@@ -2,9 +2,14 @@
 
 **Functional validation library**
 
-# Download file
+# Download
 
-https://www.validator.com/
+```console
+cd myproject
+git clone https://github.com/BrunoBeltreGuzman/validator.php.git
+```
+
+_You can delete `test` directory and `README.md`, `index.php` files._
 
 # Table of Contents
 
@@ -83,7 +88,6 @@ Result: 1
 Expected: 1
 
 Test Passed!!
-
 
 # License
 
